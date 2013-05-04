@@ -85,7 +85,9 @@ li {
   font-weight:normal;
 }
 div#header {
-  height: 105px;
+  min-height: 80px;
+  padding-bottom: 25px;
+  width: 100%;
 }
 div#scroller {
   width:100%;
