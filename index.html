@@ -1,60 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <meta name="description" content="Sebastian Jespersen Photography: Fashion and Beauty Photographer in San Francisco, CA" />
-  <meta name="keywords" content="Sebastian Jespersen,Photography,Fashion,Beauty,Photographer,San Francisco, Bay Area,California,Los Angeles,OC" />
-  <title>Sebastian Jespersen</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sebastian Jespersen Photography: Fashion and Beauty Photographer in San Francisco, CA" />
+    <meta name="keywords" content="Sebastian Jespersen,Photography,Fashion,Beauty,Photographer,San Francisco, Bay Area,California,Los Angeles,OC" />
+    <title>Sebastian Jespersen</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
 </head>
-<body>
-<div id="header">
-  <h1>Sebastian Jespersen</h1>
-  <h2>Fashion and Beauty Photographer in San&nbsp;Francisco, CA</h2>
-  <ul>
-    <li>Portfolio</li>
-    <li><a href="http://vimeo.com/17318784" target="_blank">Video</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</div>
-<div id="scroller">
-  <div id="content">
-    <ul>
-      <li><img src="img/p_01.jpg" /></li>
-      <li><img src="img/p_02.jpg" /></li>
-      <li><img src="img/p_03.jpg" /></li>
-      <li><img src="img/p_04.jpg" /></li>
-      <li><img src="img/p_05.jpg" /></li>
-      <li><img src="img/p_06.jpg" /></li>
-      <li><img src="img/p_07.jpg" /></li>
-      <li><img src="img/p_08.jpg" /></li>
-      <li><img src="img/p_09.jpg" /></li>
-      <li><img src="img/p_10.jpg" /></li>
-      <li><img src="img/p_11.jpg" /></li>
-      <li><img src="img/p_12.jpg" /></li>
-      <li><img src="img/p_13.jpg" /></li>
-      <li><img src="img/p_14.jpg" /></li>
-      <li><img src="img/p_15.jpg" /></li>
-      <li><img src="img/p_16.jpg" /></li>
-      <li><img src="img/p_17.jpg" /></li>
-      <li><img src="img/p_18.jpg" /></li>
-      <li><img src="img/p_19.jpg" /></li>
-      <li><img src="img/p_20.jpg" /></li>
-    </ul>
-  </div>
-</div>
-<script type="text/javascript">
+  <body ng-app="sjespersen.github.comApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-40154718-1']);
-  _gaq.push(['_trackPageview']);
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view=""></div>
 
-</script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-40154718-1');
+       ga('send', 'pageview');
+    </script>
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+
+        <!-- build:js scripts/modules.js -->
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
